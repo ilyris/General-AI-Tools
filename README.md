@@ -7,6 +7,107 @@ Code repository for skills, agents, steering files, documentation and more.
 
 # Videos
 - 2026 AI Workflow: https://www.youtube.com/watch?v=-QFHIoCo-Ko
+- 
 # Skills
+## AI Skills
+
+### Plan Understanding
+
+**About the skill:**
+Helps the agent understand the user's request before making changes. The agent should restate the goal, confirm feature expectations, and use available codebase context when possible. If the intent is unclear or the codebase does not provide enough context, the agent should ask the developer for clarification before proceeding.
+
+**Useful for:**
+
+* Understanding feature requests
+* Aligning on expected behavior
+* Creating better implementation plans
+* Reducing incorrect assumptions
+* Using existing codebase context before asking questions
+
+---
+
+### Recently Changed Code Awareness
+
+**About the skill:**
+Helps the agent detect code that was recently added or changed during AI-assisted work. The agent can identify new helpers, patterns, utilities, technologies, or architectural decisions and update the appropriate skill files so future sessions are aware of them.
+
+**Example:**
+If a new utility file is added that contains many hard-coded strings, the agent could recognize that this file should be tracked by a `common-language` skill.
+
+**Useful for:**
+
+* Tracking new files and patterns
+* Updating skill documentation automatically
+* Keeping project knowledge current
+* Noticing new utilities, helpers, or React patterns
+* Maintaining consistency across future AI sessions
+
+---
+
+### Common Language
+
+**About the skill:**
+Defines shared language, naming conventions, terminology, and files that should be watched for hard-coded strings or repeated copy. This skill helps the agent understand how the codebase communicates concepts and where language-related updates may need to happen.
+
+**Useful for:**
+
+* Shared terminology
+* UI copy consistency
+* Hard-coded string detection
+* Naming conventions
+* Updating language-sensitive files
+
+---
+
+### Refactor Planning
+
+**About the skill:**
+Helps the agent discuss refactoring opportunities with the developer before modifying code. The agent should suggest patterns for restructuring or optimizing code while preserving existing behavior. Once a direction is agreed on, the agent can execute the changes.
+
+**Useful for:**
+
+* Preserving behavior during refactors
+* Avoiding unnecessary rewrites
+* Improving naming
+* Extracting repeated logic
+* Simplifying complex code
+* Restructuring files or components
+
+---
+
+### Database Design
+
+**About the skill:**
+Helps the agent work with database models, schema changes, migrations, and query patterns. This skill should account for backwards compatibility, clean architecture layers, Prisma usage, and the impact of schema changes across the application.
+
+**Useful for:**
+
+* Model design
+* Prisma schema updates
+* Database migrations
+* Backwards compatibility
+* Query consistency
+* Checking schema change impact
+* Keeping database logic in the correct layer
+
+---
+
+### Documentation Updates
+
+**About the skill:**
+Helps the agent keep project documentation up to date as the codebase changes. This can include updating a `documentation.md` file, documenting API routes, writing feature overviews, explaining setup steps, and capturing known gotchas.
+
+**Useful for:**
+
+* Feature overviews
+* Setup steps
+* Architecture notes
+* API contracts
+* Known gotchas
+* Testing instructions
+* Route-level documentation
+* Application-level documentation
+
+
 
 # Agents
