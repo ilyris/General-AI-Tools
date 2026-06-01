@@ -7,7 +7,7 @@ Code repository for skills, agents, steering files, documentation and more.
 
 # Videos
 - 2026 AI Workflow: https://www.youtube.com/watch?v=-QFHIoCo-Ko
-- 
+- https://www.youtube.com/watch?v=vy7o1g2iHY8
 # Skills
 ## AI Skills
 
