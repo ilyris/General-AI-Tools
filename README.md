@@ -1,6 +1,7 @@
 # General-AI-Tools
 Code repository for skills, agents, steering files, documentation and more.
 
+
 # Documentation
 ### Claude Code
  - Skills: https://code.claude.com/docs/en/skills#configure-skills
@@ -8,8 +9,26 @@ Code repository for skills, agents, steering files, documentation and more.
 # Videos
 - 2026 AI Workflow: https://www.youtube.com/watch?v=-QFHIoCo-Ko
 - https://www.youtube.com/watch?v=vy7o1g2iHY8
+
+# Agents
+
+## What Are Agents?
+- Agents are full configuration profiles that define how a agent behaves, what tools it can use, and what context the LLM have access to.
+ - They are managed by a JSON file which takes a prompt, tools, tool settings, mcp servers, hooks, and resources.
+ - Agents can use one skill but have additional configs above or multiple skills to perform more procedural tasks. 
+  
 # Skills
-## AI Skills
+
+## What Are Skills?
+- Skills are the procedural memory of agents, these can be stand-alone to perform a task, or they can be grouped with other skills in an agent to perform procedural tasks.
+
+# When to use an Agent vs a Skill
+- Agents should be used when you need a fundamentally different mode of operation - different tools, perms, system prompt. Examples of this are a read-only code review agent oir a full-stack development agent (both are large procedural tasks)
+- Skills should be used when you want to give an agent access to domain knowledge or guidelines that should be consulted contextually.
+
+- TLDR; Agents are configurabvle and can perform multi-steped tasks, skills can perform multi-step tasks within their context or domain, but agents can chain multiple skills together.
+
+# AI Skills
 
 ### Plan Understanding
 
