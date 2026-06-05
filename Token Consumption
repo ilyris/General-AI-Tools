@@ -1,0 +1,23 @@
+### Token Consumption
+
+## Top consumption pain points
+- Long conversations, as each message sent and the entire conversation history is re-processed, which consumes tokens on each one, scaling horrifically.
+- Your choice of Models. The strongest model will be significantly more expensive than "weaker / older" ones
+- Conversation length & context overload.
+- Lack of specificity in tasks and rework. Meaning ambiguous prompts, repeated mistakes or the need to go back-and-forth on clarifications will waste tokens.
+
+
+## Strategies for cost-effective claude usage
+
+# Strategic Model Selection
+- Hybrid approach - Reserve the high reasoning models for critical, low-frequency tasks.
+- Cheaper models for routine tasks - For a majority of high-frequency tasks, opt to use weaker models to save on cost, but then use higher reasoning models to check work, plan, or design the architecture.
+
+# Context & Memory Management
+- Clear chat regularly, using the ```/clear``` command as often as possible when a task is done or when you switch to something unrelated. This wipes the agents short-term memory, preventing irrelevant past interactions from influencing the current task and reducing token consumption for subsequent messages.
+- Summarize conversations with /compact - Utilize the ```/compact``` command frequently. This helps when you want to forward key information over without retaining the chat's history. Clausde will summarize the conversation, reducing token count, then will start a new chat with the summary preloaded. You can also provide custom summarization instruction. It's best do utilize compacting when youre within 30% context, as the context grows the agent starts to struggle and consumed more tokens.
+- Leverage the CLAUDE.md for persistent context
+- Modular and hierarchial Documentation - Instead of bloating up the CLAUDE.md file, instead you can link other relevant files using @ symbol to help its context. This helps prevent context pollution
+- Be explicit and concise: Provide clear, direct and structured instructions. Using XML tags for clarity, avoide verbose language.
+
+
